@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hafizusman0.github.io/Noor-al-Quran-academy/sitemap.xml

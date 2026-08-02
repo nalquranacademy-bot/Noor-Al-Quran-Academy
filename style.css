@@ -1,0 +1,741 @@
+/* ===============================
+   Noor Al-Quran Academy
+   Professional CSS
+   Part 1
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+/* ===== Navbar ===== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 14px 40px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .20);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* ===== Hero ===== */
+
+header {
+    background: linear-gradient(135deg, #0b5ed7, #003366);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.slider {
+    width: 360px;
+    height: 240px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .30);
+}
+
+.slide.active {
+    display: block;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ===== Buttons ===== */
+
+button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 35px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 8px;
+}
+
+button:hover {
+    background: #e68900;
+    transform: translateY(-3px);
+}
+
+
+/* ===============================
+   Noor Al-Quran Academy
+   Professional CSS
+   Part 2
+================================= */
+
+
+/* ===== Sections ===== */
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .10);
+}
+
+section h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+
+/* ===== Cards ===== */
+
+.card {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+    background: #fff;
+    border-radius: 18px;
+    vertical-align: top;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .20);
+}
+
+.card h3 {
+    color: #003366;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ===== Gallery ===== */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .20);
+    transition: .35s;
+}
+
+.gallery img:hover {
+    transform: scale(1.06);
+}
+
+
+/* ===== Form ===== */
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #0b5ed7;
+    outline: none;
+    box-shadow: 0 0 8px rgba(11, 94, 215, .25);
+}
+
+
+/* ===== Table ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #003366;
+    color: #fff;
+    padding: 15px;
+}
+
+table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+table tr:hover {
+    background: #eef5ff;
+}
+
+
+/* ===============================
+   Noor Al-Quran Academy
+   Professional CSS
+   Part 3
+================================= */
+
+
+/* ===== Stats ===== */
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-box {
+    width: 220px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #003366, #0b5ed7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .20);
+    transition: .35s;
+}
+
+.stat-box:hover {
+    transform: translateY(-8px);
+}
+
+.stat-box h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 18px;
+}
+
+
+/* ===== FAQ ===== */
+
+.faq-box {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 6px solid #0b5ed7;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.faq-box:hover {
+    background: #eef5ff;
+}
+
+.faq-box h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.faq-box p {
+    color: #555;
+}
+
+
+/* ===== Certificate ===== */
+
+#certificate .card {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background: #002244;
+    color: #fff;
+    text-align: center;
+    padding: 45px 20px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+
+/* ===== WhatsApp Button ===== */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 34px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .30);
+    transition: .3s;
+    z-index: 999;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+/* ===== Back To Top ===== */
+
+#topBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #003366;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+    z-index: 999;
+}
+
+#topBtn:hover {
+    background: #0b5ed7;
+}
+
+
+/* ===============================
+   Noor Al-Quran Academy
+   Professional CSS
+   Part 4
+================================= */
+
+
+/* ===== Animations ===== */
+
+.card,
+.gallery img,
+.stat-box,
+button {
+    transition: all .35s ease;
+}
+
+section {
+    animation: fadeUp .8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===== Dark Mode ===== */
+
+.dark {
+    background: #121212;
+    color: #fff;
+}
+
+.dark nav {
+    background: #000;
+}
+
+.dark section {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.dark .card {
+    background: #2b2b2b;
+}
+
+.dark .card h3,
+.dark .card p,
+.dark section h2,
+.dark .faq-box h3,
+.dark .faq-box p {
+    color: #fff;
+}
+
+.dark .faq-box {
+    background: #333;
+}
+
+.dark table td {
+    background: #222;
+    color: #fff;
+}
+
+.dark footer {
+    background: #000;
+}
+
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width:768px) {
+    nav {
+        position: relative;
+        padding: 12px 15px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+    .logo h2 {
+        font-size: 18px;
+    }
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 0;
+        width: auto;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu a {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+    header {
+        padding: 60px 15px;
+    }
+    header h1 {
+        font-size: 34px;
+    }
+    header p {
+        font-size: 18px;
+    }
+    .slider {
+        width: 100%;
+        max-width: 330px;
+        height: 210px;
+    }
+    section {
+        width: 95%;
+        padding: 25px 18px;
+    }
+    .card {
+        width: 100%;
+        margin: 12px 0;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-box {
+        width: 100%;
+        max-width: 320px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    button {
+        width: 100%;
+    }
+    .whatsapp {
+        width: 58px;
+        height: 58px;
+        font-size: 30px;
+    }
+    #topBtn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+
+/* Mobile Navbar Fix */
+
+@media screen and (max-width:768px) {
+    .menu-btn {
+        display: block !important;
+        width: auto !important;
+        background: none;
+        color: #fff;
+        font-size: 32px;
+        border: none;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        flex-direction: column;
+        z-index: 999;
+    }
+    .menu.show {
+        display: flex !important;
+    }
+    .menu a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+}
+
+
+/* Mobile Navbar Fix */
+
+@media screen and (max-width:768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .menu-btn {
+        display: block !important;
+        width: auto !important;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 32px;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #003366;
+        flex-direction: column;
+    }
+    .menu.show {
+        display: flex !important;
+    }
+    .menu a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.error-page {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.error-page h1 {
+    font-size: 80px;
+}
+
+.error-page a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #008000;
+    color: white;
+    border-radius: 5px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #2e8b57;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
